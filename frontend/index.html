@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+        CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+    </script>
+    <title>环境监测系统</title>
+    <!--preload-links-->
+    <!--app-context-->
+    
+    <!-- 直接引入ECharts，避免动态加载的问题 -->
+    <script>
+      console.log('准备加载ECharts库...');
+      window.ECHARTS_LOADING_STATUS = 'loading';
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js" 
+      onload="console.log('CDN ECharts加载成功'); window.ECHARTS_LOADING_STATUS = 'loaded';" 
+      onerror="console.error('CDN ECharts加载失败'); window.ECHARTS_LOADING_STATUS = 'failed';">
+    </script>
+    
+    <!-- 如果CDN加载失败，使用本地加载脚本 -->
+    <script>
+      window.addEventListener('load', function() {
+        console.log('Window loaded, checking ECharts availability');
+        setTimeout(function() {
+          if (window.echarts) {
+            console.log('ECharts is available globally:', window.echarts.version);
+          } else {
+            console.warn('ECharts is NOT available globally, loading local script');
+            
+            // 加载本地脚本
+            var script = document.createElement('script');
+            script.src = '/static/echarts-local.js';
+            script.onload = function() {
+              console.log('本地ECharts脚本加载成功');
+            };
+            script.onerror = function() {
+              console.error('本地ECharts脚本加载失败，尝试使用回退方案');
+              // 加载回退方案
+              var fallbackScript = document.createElement('script');
+              fallbackScript.src = '/static/echarts-fallback.js';
+              document.head.appendChild(fallbackScript);
+            };
+            document.head.appendChild(script);
+          }
+        }, 1000);
+      });
+      
+      // 提供一个全局函数用于检查echarts是否可用
+      window.isEChartsAvailable = function() {
+        return !!window.echarts;
+      }
+    </script>
+    
+    <!-- 加载调试脚本 -->
+    <script src="/static/js/echarts-debug.js"></script>
+  </head>
+  <body>
+    <div id="app"><!--app-html--></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

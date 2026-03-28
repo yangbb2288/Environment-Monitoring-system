@@ -1,0 +1,303 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.data-card[data-v-8006314c] {
+  margin-bottom: 0.625rem;
+  position: relative;
+  overflow: hidden;
+}
+.data-card.warning[data-v-8006314c] .el-card__body::before {
+  background-color: var(--el-color-warning);
+}
+.data-card.warning .value[data-v-8006314c] {
+  color: var(--el-color-warning);
+}
+.data-card.danger[data-v-8006314c] .el-card__body::before {
+  background-color: var(--el-color-danger);
+}
+.data-card.danger .value[data-v-8006314c] {
+  color: var(--el-color-danger);
+}
+.data-card[data-v-8006314c] .el-card__body {
+  padding: 0.46875rem 0.625rem;
+  position: relative;
+}
+.data-card[data-v-8006314c] .el-card__body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--el-color-primary);
+}
+.data-card .card-header[data-v-8006314c] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3125rem;
+}
+.data-card .card-header .title[data-v-8006314c] {
+  font-size: 0.875rem;
+  color: var(--el-text-color-regular);
+}
+.data-card .card-header .unit[data-v-8006314c] {
+  font-size: 0.75rem;
+  color: var(--el-text-color-secondary);
+}
+.data-card .card-body[data-v-8006314c] {
+  margin-bottom: 0.3125rem;
+}
+.data-card .card-body .value[data-v-8006314c] {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--el-text-color-primary);
+}
+.data-card .card-footer .trend[data-v-8006314c] {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+}
+.data-card .card-footer .trend.up[data-v-8006314c] {
+  color: var(--el-color-danger);
+}
+.data-card .card-footer .trend.down[data-v-8006314c] {
+  color: var(--el-color-success);
+}
+.data-card .card-footer .trend.flat[data-v-8006314c] {
+  color: var(--el-color-info);
+}
+.data-card .card-footer .trend .trend-value[data-v-8006314c] {
+  margin-left: 0.1875rem;
+}
+
+.echart-container[data-v-2e983291] {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+}
+.echart[data-v-2e983291] {
+  width: 100%;
+  height: 100%;
+}
+.loading-container[data-v-2e983291] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.loading-spinner[data-v-2e983291] {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 0.125rem solid #f3f3f3;
+  border-top: 0.125rem solid #3498db;
+  border-radius: 50%;
+  animation: spin-2e983291 1s linear infinite;
+}
+.loading-text[data-v-2e983291] {
+  margin-top: 0.3125rem;
+  font-size: 0.75rem;
+  color: #666;
+}
+@keyframes spin-2e983291 {
+0% { transform: rotate(0deg);
+}
+100% { transform: rotate(360deg);
+}
+}
+
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.container[data-v-1cf27b2a] {
+  padding: 0.625rem;
+}
+.welcome-section[data-v-1cf27b2a] {
+  margin-bottom: 0.625rem;
+}
+.welcome-section[data-v-1cf27b2a] .el-card__body {
+  padding: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome-title[data-v-1cf27b2a] {
+  display: flex;
+  flex-direction: column;
+}
+.welcome-title .title[data-v-1cf27b2a] {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--el-text-color-primary);
+}
+.welcome-title .subtitle[data-v-1cf27b2a] {
+  font-size: 0.75rem;
+  color: var(--el-text-color-secondary);
+  margin-top: 0.3125rem;
+}
+.user-info[data-v-1cf27b2a] {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.user-details[data-v-1cf27b2a] {
+  margin-left: 0.3125rem;
+  display: flex;
+  flex-direction: column;
+}
+.user-details .username[data-v-1cf27b2a] {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--el-text-color-primary);
+}
+.sensor-status[data-v-1cf27b2a] {
+  margin-bottom: 0.625rem;
+}
+.sensor-status[data-v-1cf27b2a] .el-card__body {
+  padding: 0.46875rem 0.625rem;
+}
+.sensor-status .status-text[data-v-1cf27b2a] {
+  font-size: 0.8125rem;
+  color: var(--el-text-color-secondary);
+}
+.sensor-status .text-right[data-v-1cf27b2a] {
+  text-align: right;
+}
+.sensor-status .sensor-badge[data-v-1cf27b2a] {
+  margin-left: 0.3125rem;
+}
+.quick-stats[data-v-1cf27b2a] {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+.quick-stats[data-v-1cf27b2a] .data-card {
+  height: 100%;
+}
+.quick-stats[data-v-1cf27b2a] .data-card .el-card__body {
+  height: 100%;
+}
+.quick-stats[data-v-1cf27b2a] .data-card .el-card__body::before {
+  height: 100%;
+}
+.chart-section[data-v-1cf27b2a] {
+  margin-bottom: 0.9375rem;
+}
+.chart-section[data-v-1cf27b2a] .el-card__header {
+  padding: 0.46875rem 0.625rem;
+}
+.chart-section[data-v-1cf27b2a] .el-card__body {
+  padding: 0.3125rem;
+  height: 400px;
+  overflow: hidden;
+}
+.section-header[data-v-1cf27b2a] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-header .section-title[data-v-1cf27b2a] {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--el-text-color-primary);
+}
+.features-title[data-v-1cf27b2a] {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--el-text-color-primary);
+}
+.quick-actions[data-v-1cf27b2a] {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.625rem;
+  margin-top: 0.625rem;
+}
+.action-item[data-v-1cf27b2a] {
+  cursor: pointer;
+}
+.action-item[data-v-1cf27b2a] .el-card__header {
+  padding: 0.46875rem 0.625rem;
+}
+.action-item[data-v-1cf27b2a] .el-card__body {
+  padding: 0.46875rem 0.625rem;
+  font-size: 0.75rem;
+  color: var(--el-text-color-secondary);
+}
+.action-header[data-v-1cf27b2a] {
+  display: flex;
+  align-items: center;
+}
+.action-header .action-text[data-v-1cf27b2a] {
+  margin-left: 0.3125rem;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  color: var(--el-text-color-primary);
+}
+.action-desc[data-v-1cf27b2a] {
+  font-size: 0.75rem;
+  color: var(--el-text-color-secondary);
+  display: block;
+}
+.chart-container[data-v-1cf27b2a] {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+.quick-stats[data-v-1cf27b2a] {
+    grid-template-columns: repeat(4, 1fr);
+}
+.quick-actions[data-v-1cf27b2a] {
+    grid-template-columns: repeat(4, 1fr);
+}
+}
