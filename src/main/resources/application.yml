@@ -1,0 +1,67 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/testdb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  sql:
+    init:
+      mode: never
+      schema-locations: classpath:db/db.sql
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+
+  #邮箱验证码配置
+  mail:
+    port: 587
+    #smtp服务主机  qq邮箱则为smtp.qq.com; 163邮箱是smtp.163.com
+    host: smtp.qq.com
+    #服务协议
+    protocol: smtp
+    # 编码集
+    default-encoding: UTF-8
+    #发送邮件的账户
+    username: your-email
+    #授权码
+    password: your-email-api-key
+
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+  port: 8080
+
+  mqtt:
+    username: dowithout
+    password: dowithout
+    url: tcp://117.72.63.151:1883
+    subClientId: ${random.uuid}
+    subTopic: 7_group_data, 7_group_data_send
+    pubClientId: ${random.uuid}
+
+  ai:
+    openai:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode  # 通义千问
+      api-key: you-api-key
+      chat.options:
+          model: qwen-plus
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+          model: qwen3:8b
+  application:
+    name: springaidemo
+
+anythingllm:
+  api:
+    url: http://localhost:3001/api/v1/workspace/kwon/thread/7a7f335e-f4fc-4746-8538-e841b2bed7bd/chat
+    key: your-api-key
