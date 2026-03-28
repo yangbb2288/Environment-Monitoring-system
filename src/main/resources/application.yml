@@ -41,8 +41,8 @@ spring:
   port: 8080
 
   mqtt:
-    username: dowithout
-    password: dowithout
+    username: your-username
+    password: your-password
     url: tcp://117.72.63.151:1883
     subClientId: ${random.uuid}
     subTopic: 7_group_data, 7_group_data_send
